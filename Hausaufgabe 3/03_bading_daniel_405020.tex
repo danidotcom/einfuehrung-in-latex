@@ -1,0 +1,125 @@
+% ---------------- Beginn Präambel --------------
+
+% Datum: 06.11.2023
+% Vorname: Daniel 
+% Nachname: Bading
+% Matrikelnummer: 405020
+% E-Mail: daniel.bading@campus.tu-berlin.de
+
+% ---------------- Ende Präambel --------------
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{amsmath}
+
+\title{Hausaufgabe 2 - Einführung in Latex}
+\author{
+  Bading, Daniel\\
+  \texttt{daniel.bading@campus.tu-berlin.de}\\
+  Matrikelnummer: 405020
+  }
+\date{\today}
+  
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+% ------------ Beginn eigentlicher Text ---------
+
+\section{Hausaufgabe 3.2}
+%\subsection{Stetigkeit von $f \cdot g$}
+\begin{itemize}
+\item Für eine Folge $(x_n)$ gilt: 
+\begin{align*}
+\lim\limits_{n \to \infty} (f \cdot g) (x_n) 
+&= \lim\limits_{n \to \infty} (f(x_n) \cdot g(x_n)) \\ 
+&= \lim\limits_{n \to \infty} f(x_n) \cdot \lim\limits_{n \to \infty}g(x_n) \\
+&= f(x_0) \cdot g(x_0) \\
+&= (f \cdot g) (x_0). 
+\end{align*}
+Somit ist $f \cdot g$ stetig.
+%\subsection{Berechnung des Grenzwerts}
+\item Wir berechnen den folgenden Grenzwert:
+\begin{align}
+\lim\limits_{k \to \infty} \frac{k^3 - k^2 + k - 1}{k^3 + k^2 + k + 1} 
+&= \lim\limits_{k \to \infty} \frac{k^3}{k^3} \cdot \frac{1 - \frac{k^2}{k^3} + \frac{k}{k^3} - \frac{1}{k^3}}{1 + \frac{k^2}{k^3} + \frac{k}{k^3} + \frac{1}{k^3}} \\
+&= \lim\limits_{k \to \infty} \frac{1 - \frac{k^2}{k^3} + \frac{k}{k^3} - \frac{1}{k^3}}{1 + \frac{k^2}{k^3} + \frac{k}{k^3} + \frac{1}{k^3}} \\
+&= 1
+\end{align}
+%\subsection{Teleskopsumme von Matrizen}
+\item Es seien $A,B$ zwei $n \times n$-Matrizen. Mit Hilfe der Teleskopsumme 
+\begin{align*}
+\tag{TKS}
+A^{n+1} - B^{n+1} = \sum\limits_{k = 0}^{n} A^k (A-B) B^{n-k}
+\end{align*}
+\end{itemize}
+\section{Hausaufgabe 3.3}
+\begin{itemize}
+\item[(i)] Es sei $R := [0. \pi] \times [0. \pi]$ und $f(x,y) := sin(x+y)$. Wir berechnen das Integral:
+\begin{align*}
+\int\limits_R f(x,y) dV 
+&= \int\limits_{0}^{\pi} \left( \int\limits_{0}^{\pi} \sin(x+y) dy \right) dx \\
+&= \int\limits_{0}^{\pi} - \cos(x+y) \bigg\rvert_{y = 0}^{y = \pi} dx \\
+&= - \int\limits_{0}^{\pi} ( \cos(x+\pi) - \cos(x) ) dx \\
+&= - \int\limits_{0}^{\pi} ( \cos(x+\pi) - \cos(x) ) dx \\
+&= - (\sin( x + \pi ) - \sin(x) \bigg\rvert_0^{\pi} \\
+&= - (\sin(2 \pi) - \sin(\pi) (- \sin(\pi) - 0 )) \\
+&= 0
+\end{align*}
+
+\item[(ii)] Der Eulersche Exponentialansatz $y(x) = e^{\lambda x}$ führt zu :
+\begin{align*}
+y''' - y' = 0 &\Leftrightarrow y(x) = e^{\lambda x} (\lambda^3 - \lambda) = 0 \\
+&\Leftrightarrow \lambda^3 - \lambda = 0  \\
+&\Leftrightarrow \lambda(\lambda^2 -1) = 0 \\
+&\Leftrightarrow \overbrace{\lambda (\lambda + 1) (\lambda - 1)}^{=: p(\lambda)} = 0 
+\end{align*}
+
+\item[(iii)] Wenden wir auf diese Gleichung die Norm an, erhalten wir: 
+\begin{align*}
+\bigg\lVert \sum\limits_{k = 0}^l \frac{A^k}{k!} - \sum\limits_{k = 0}^l \frac{B^k}{k!} \bigg\rVert_2 
+&= \bigg\lVert (A - B) \sum\limits_{k = 0}^{l-1} \frac{1}{(k+1)!} (\sum\limits_{j = 0}^{k} A^j B^{k-j}) \bigg\rVert_2 \\
+&\leq \Vert A - B \Vert_2 \cdot \sum\limits_{k = 0}^{l - 1} \frac{1}{(k+1)!} \sum\limits_{k = 0}^{l - 1} \Vert A \Vert_2^j \cdot \Vert B \Vert_2^{k-j} \\
+&\leq \cdots \\
+&= \Vert A - B \Vert_2 \cdot \sum\limits_{k = 0}^{l - 1} \frac{1}{k!} \max \{ \Vert A \Vert_2 , \Vert B \Vert_2 \}^k
+\end{align*}
+\item[(iv)] Das konjugiert-komplexe Paar $\lambda_{3/4} = 1 \pm 3i$ liefert die Lösungen 
+\begin{align*}
+y_3 (x) = \textbf{Re} e^{\lambda_3 x} = \textbf{Re} e^{1+3i} = \textbf{Re} e^x (\cos(3x) + i \sin(3x) ) = e^x \cos(3x) \\
+y_4 (x) = \textbf{Im} e^{\lambda_3 x} = \textbf{Im} e^{1+3i} = \textbf{Im} e^x (\cos(3x) + i \sin(3x) ) = e^x \sin(3x) \\
+\end{align*}
+\end{itemize}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

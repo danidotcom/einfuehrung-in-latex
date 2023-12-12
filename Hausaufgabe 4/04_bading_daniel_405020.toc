@@ -1,0 +1,5 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Hausaufgabe 4.1}{3}{}%
+\contentsline {section}{\numberline {2}Hausaufgabe 4.2}{4}{}%
+\contentsline {section}{\numberline {3}Hausaufgabe 4.3}{5}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

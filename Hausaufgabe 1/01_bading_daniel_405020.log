@@ -1,0 +1,281 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  6 NOV 2023 23:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**01_bading_daniel_405020.tex
+(./01_bading_daniel_405020.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen141
+\l@unhyphenated=\language87
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-english.t
+ex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count195
+\c@Blindtext=\count196
+\c@blind@countparstart=\count197
+\blind@countxx=\count198
+\blindtext@numBlindtext=\count199
+\blind@countyy=\count266
+\c@blindlist=\count267
+\c@blindlistlevel=\count268
+\c@blindlist@level=\count269
+\blind@listitem=\count270
+\c@blind@listcount=\count271
+\c@blind@levelcount=\count272
+\blind@mathformula=\count273
+\blind@Mathformula=\count274
+\c@blind@randomcount=\count275
+\c@blind@randommax=\count276
+\c@blind@pangramcount=\count277
+\c@blind@pangrammax=\count278
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count279
+\l__pdf_internal_box=\box51
+)
+(./01_bading_daniel_405020.aux)
+\openout1 = `01_bading_daniel_405020.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 35.
+ [1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./01_b
+ading_daniel_405020.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `01_bading_daniel_405020.toc'.
+
+ [2]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 Hello, here is some text without a meaning. This text should s
+how
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 what a printed text will look like at this place. If you read 
+this
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 text, you will get no information. Really? Is there no informa
+tion?
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 Is there a difference between this text and some nonsense like
+ ``Huardest
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 gefburn''? Kjift -- not at all! A blind text like this gives y
+ou
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 information about the selected font, how the letters are writt
+en and
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 an impression of the look. This text should contain all letter
+s of
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 the alphabet and it should be written in of the original langu
+age.
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 61--63
+\OT1/cmtt/m/n/10 There is no need for special content, but the length of words 
+should
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
+
+ []
+
+[5]
+Overfull \hbox (17.87918pt too wide) in paragraph at lines 108--111
+\OT1/cmr/m/sc/20.74 some non-sense like ``Huardest gef-
+ []
+
+
+Overfull \hbox (31.44087pt too wide) in paragraph at lines 108--111
+\OT1/cmr/m/sc/20.74 for-ma-tion about the se-lected font,
+ []
+
+
+Overfull \hbox (1.74829pt too wide) in paragraph at lines 108--111
+\OT1/cmr/m/sc/20.74 how the let-ters are writ-ten and
+ []
+
+
+Overfull \hbox (19.8266pt too wide) in paragraph at lines 108--111
+\OT1/cmr/m/sc/20.74 words should match the lan-guage.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
+
+ []
+
+[6] [7]
+Overfull \hbox (20.50525pt too wide) in paragraph at lines 136--139
+\OT1/cmtt/m/n/8 Hello, here is some text without a meaning. This text should sh
+ow what a printed text
+ []
+
+
+Overfull \hbox (3.505pt too wide) in paragraph at lines 136--139
+\OT1/cmtt/m/n/8 will look like at this place. If you read this text, you will g
+et no information.
+ []
+
+
+Overfull \hbox (7.75507pt too wide) in paragraph at lines 136--139
+\OT1/cmtt/m/n/8 Really? Is there no information? Is there a difference between 
+this text and some
+ []
+
+
+Overfull \hbox (24.75531pt too wide) in paragraph at lines 136--139
+\OT1/cmtt/m/n/8 nonsense like ``Huardest gefburn''? Kjift -- not at all! A blin
+d text like this gives
+ []
+
+
+Overfull \hbox (20.50525pt too wide) in paragraph at lines 136--139
+\OT1/cmtt/m/n/8 you information about the selected font, how the letters are wr
+itten and an impression
+ []
+
+
+Overfull \hbox (7.75507pt too wide) in paragraph at lines 136--139
+\OT1/cmtt/m/n/8 of the look. This text should contain all letters of the alphab
+et and it should be
+ []
+
+
+Overfull \hbox (7.75507pt too wide) in paragraph at lines 136--139
+\OT1/cmtt/m/n/8 written in of the original language. There is no need for speci
+al content, but the
+ []
+
+[8] (./01_bading_daniel_405020.aux) ) 
+Here is how much of TeX's memory you used:
+ 1717 strings out of 476025
+ 31462 string characters out of 5790017
+ 1856388 words of memory out of 5000000
+ 22201 multiletter control sequences out of 15000+600000
+ 519309 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,6n,52p,182b,262s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb>
+Output written on 01_bading_daniel_405020.pdf (8 pages, 230091 bytes).
+PDF statistics:
+ 106 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

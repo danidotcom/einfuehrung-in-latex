@@ -1,0 +1,152 @@
+% ---------------- Beginn Präambel --------------
+
+% Datum: 06.11.2023
+% Vorname: Daniel 
+% Nachname: Bading
+% Matrikelnummer: 405020
+% E-Mail: daniel.bading@campus.tu-berlin.de
+
+% ---------------- Ende Präambel --------------
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\title{Hausaufgabe 2 - Einführung in Latex}
+\author{
+  Bading, Daniel\\
+  \texttt{daniel.bading@campus.tu-berlin.de}\\
+  Matrikelnummer: 405020
+  }
+\date{\today}
+  
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+% ------------ Beginn eigentlicher Text ---------
+
+\section{Hausaufgabe 2.2}
+
+Wir schauen uns hier eine Auflistung mit einer describtion-Umgebung: 
+\begin{description}
+\item Beispiel 1
+\item Beispiel 2
+\item Beispiel 3
+\end{description} 
+Solch eine Auflistung kann man auch mit einer itemize-Umgebung machen und zwar folgendermaßen: 
+\begin{itemize}
+\item Beispiel 1
+\begin{itemize}
+\item Beispiel 1.1
+\item Beispiel 1.2
+\end{itemize}
+\item Beispiel 2
+\item Beispiel 3
+\end{itemize}
+Das schöne ist, dass hier auch eine zweite verschachtelte Ebene vorzufinden ist. \\
+Analog funktioniert dies mit einer enumerate-Umgebung: 
+\begin{enumerate}
+\item Beispiel 1
+\begin{enumerate}
+\item Beispiel 1.1
+\begin{enumerate}
+\item Beispiel 1.1.1
+\begin{enumerate}
+\item Beispiel 1.1.1.1
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{enumerate}
+Interessant ist hier, dass quasi ab der 4. Ebene die Aufzählung zu tief ist. Beispiel 1 zeigt die maximale Tiefe der Aufzählung mit der enumerate-Umgebung. \\
+
+Wir wollen nun schauen, ob man tiefer Schachteln kann, wenn man eine \texttt{itemize}-Umgebung mit der \texttt{enumerate}-Umgebung mischt. 
+\begin{enumerate}
+\item Beispiel 1
+
+\begin{enumerate}
+\item Beispiel 1.1
+
+\begin{enumerate}
+\item Beispiel 1.1.1
+
+\begin{enumerate}
+\item Beispiel 1.1.1.1
+
+\begin{itemize}
+\item Beispiel 1.1.1.1.1
+
+\begin{itemize}
+\item Beispiel 1.1.1.1.1.1
+
+\end{itemize}
+
+\end{itemize}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{enumerate}
+Wie wir sehen, kann man so tiefere Ebenen erstellen, allerdings ist das auch schon die tiefste Ebene, die wir erreichen können, das heißt, es sind höchstens 6 Ebenen möglich. 
+
+\newpage
+
+\section{Hausaufgabe 2.3}
+
+Wir schauen uns eine Tabelle mit \texttt{tabulator} an. Folgendes Beispiel zum Einstieg: \\
+
+\begin{tabular}{l c r c l}
+Vorname & Name & Alter & Geschlecht & irgendwas \\
+Daniel & Bading & 24 & männlich & k.A. \\
+Jeff & Musk & 45 & männlich & k.A. \\
+Saylor & Twift & 32 & weiblich & k.A. \\
+Lill & Tindemann & 61 & männlich & k.A. \\
+\\
+\end{tabular}\\
+Man kann auch bestimmte Spalten zusammenfassen und eine \texttt{multicolumn} erstellen. Wir fassen also Name, Vorname und Alter durch "persönliche Angaben" zusammen.\\
+
+\begin{tabular}{l c r c l}
+\multicolumn{3}{c}{persönliche Angaben} & Geschlecht & irgendwas \\
+Daniel & Bading & 24 & männlich & k.A. \\
+Jeff & Musk & 45 & männlich & k.A. \\
+Saylor & Twift & 32 & weiblich & k.A. \\
+\\
+\end{tabular} \\
+Hier haben wir eine Tabelle mit 12 Spalten, wo die ersten sechs Spalten rechtsbündig sind und die letzten sechs linksbündig. Es ist die erste Zeile ("Inhaltsangabe") durch eine Trennlinie von den andere Zeilen getrennt. Allerdings ist dies auch die einzige (geforderte) Linie. Die verschiedenen Spalten sind nicht durch Linien getrennt. \\
+
+\begin{tabular}{ *{6}{r}  *{6}{l} }
+  \multicolumn{12}{c}{Inhaltsangabe} \\
+  \hline
+  1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 \\
+  10 & 11 & 12 & 13 & 14 & 15 & 10 & 11 & 12 & 13 & 14 & 15 \\
+  100 & 101 & 102 & 103 & 104 & 105 & 100 & 101 & 102 & 103 & 104 & 105 \\ 
+  \\
+\end{tabular}\\
+Nun betrachten wir eine Tabelle, deren letzte Spalte genau 5cm breit ist und mehrzeiligen Text enthält. In dieser Tabelle ist die oberste Zeile ("Inhaltsangabe") durch eine Trennlinie von den anderen Zeilen getrennt. Auch die jeweiligen Spalten sind durch Linien getrennt. \\
+
+\begin{tabular}{| l |  l |  p{5cm} |}
+	\hline
+	\multicolumn{3}{| c |}{Inhaltsangabe} \\
+	\hline
+	Stadt & Land & Fluss, Gebirge oder Gewässer, was aber jeder kennt und sich niemand ausdenkt \\
+	Berlin & Belgien & mir ist kein Fluss, Gewässer oder Gebirge eingefallen, dass mit F anfängt \\
+	Stuttgart & Saarland & Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam \\
+	Gurkstadt & Gurkistan & Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam \\
+	\hline
+\end{tabular}
+
+\end{document}

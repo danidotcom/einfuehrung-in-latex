@@ -1,0 +1,3 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Hausaufgabe 3.2}{3}{}%
+\contentsline {section}{\numberline {2}Hausaufgabe 3.3}{4}{}%

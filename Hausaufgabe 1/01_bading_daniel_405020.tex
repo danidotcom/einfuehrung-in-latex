@@ -1,0 +1,140 @@
+% ---------------- Beginn Präambel --------------
+
+% Datum: 06.11.2023
+% Vorname: Daniel 
+% Nachname: Bading
+% Matrikelnummer: 405020
+% E-Mail: daniel.bading@campus.tu-berlin.de
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+% ----- TODO ------
+% Aufgabe 1.1; letzter Stichpunkt: 
+% 	Kennzeichnet den Beginn der Präambel und den Beginn der eigentlichen Text- Umgebung mit einem entsprechenden Kommentar.
+% 
+
+\title{Hausaufgabe 1 - Einführung in Latex}
+
+\author{
+  Bading, Daniel\\
+  \texttt{daniel.bading@campus.tu-berlin.de}\\
+  Matrikelnummer: 405020
+  \and
+  Mustermann, Max\\
+  \texttt{max.mustermann@mustermann.de} \\
+  Matrikelnummer: 432156
+  }
+ 
+\date{\today}
+  
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+% ------------ Beginn eigentlicher Text ---------
+
+\section{Schrift in verschiedenen Schriftarten}
+
+\subsection{fettgedruckt}
+
+\begin{textbf}
+\blindtext
+\end{textbf}
+
+\subsection{italic}
+
+\begin{textit}
+\blindtext
+\end{textit}
+
+\subsection{texttt}
+\begin{texttt}
+\blindtext  
+\end{texttt}
+
+\subsection{textsc}
+
+\begin{textsc}
+\blindtext
+\end{textsc}
+
+\newpage
+
+\section{kombinierte Schriftarten}
+
+jetzt schauen wir uns ein mal Texte mit kombinierten Schriftarten an: \\
+
+\textbf{\textit{dies ist Beispiel 1 }} \\ 
+\textbf{\underline{dies ist Beispiel 2 }} \\
+\underline{\textsc{dies ist Beispiel 3 }} \\
+\underline{\textit{dies ist Beispiel 4 }} \\
+
+\newpage
+
+\section{Schriften in verschiedenen Größen}
+
+\subsection{Schrift in tiny}
+\begin{tiny}
+\blindtext
+\end{tiny}
+
+\subsubsection{Fett und tiny}
+
+\begin{tiny}
+\begin{textbf}
+\blindtext
+\end{textbf}
+\end{tiny}
+
+\subsection{Schrift in huge}
+
+\begin{huge}
+\blindtext
+\end{huge}
+
+\subsubsection{textsc und Huge}
+
+\begin{huge}
+\begin{textsc}
+\blindtext
+\end{textsc}
+\end{huge}
+
+\subsection{Schrift in Large}
+
+\begin{Large}
+\blindtext
+\end{Large}
+
+\subsubsection{italic und Large}
+
+\begin{Large}
+\begin{textit}
+\blindtext
+\end{textit}
+\end{Large}
+
+\subsection{Schrift in footnotesize}
+
+\begin{footnotesize}
+\blindtext
+\end{footnotesize}
+
+\subsubsection{texttt und footnotesize}
+
+\begin{footnotesize}
+\begin{texttt}
+\blindtext
+\end{texttt}
+\end{footnotesize}
+
+\end{document}

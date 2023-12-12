@@ -1,0 +1,181 @@
+% ---------------- Beginn Präambel --------------
+
+% Datum: 06.11.2023
+% Vorname: Daniel 
+% Nachname: Bading
+% Matrikelnummer: 405020
+% E-Mail: daniel.bading@campus.tu-berlin.de
+
+% ---------------- Ende Präambel --------------
+
+\documentclass[a4paper]{article} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{theoremref}
+\usepackage{cancel}
+
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\V}{V^{\ast}}
+
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{satz}{Satz}[subsection]
+\newtheorem{definition}[satz]{Definition}
+
+\title{Hausaufgabe 2 - Einführung in Latex}
+\author{
+  Bading, Daniel\\
+  \texttt{daniel.bading@campus.tu-berlin.de}\\
+  Matrikelnummer: 405020
+  }
+\vfill
+\date{\today}
+  
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+% ------------ Beginn eigentlicher Text ---------
+
+\section{Hausaufgabe 5.1}
+\subsection{Vorwort}
+Ich hoffe hier geht es nicht so sehr um den Inhalt. Ich denke aber es wird die Nummerierung der Theorem-Umgebungen klar. Dabei ist die Theorem-Umgebung 'Lemma', die die Nummer der jeweiligen \texttt{section} enthält und die Theorem-Umgebungen `Satz` und 'Definition' die anderen beiden. 
+\begin{lemma}\thlabel{lemma 1.1}
+Wir wollen in diesem Kapitel und den folgenden Kapiteln sehen, dass die Nummerierung der Lemmata unabhängig von den der Sätze und Definitionen ist. Jedoch ist die Nummerierung der Sätze und Definitionen gleich. 
+\end{lemma}
+%
+und wollen später auf \thref{lemma 1.1} refenzieren 
+\begin{definition} 
+Seien X, Y Mengen und $ A \colon X \to 2^Y $ eine Abbildung. Dann heißt:
+\begin{itemize}
+% \setlength\itemsep{1em}
+\item[i)] $ D(A)  := \{u \in X \vert Au \neq \emptyset \} $ der effektive Defintionsbereich
+\item[ii)] $ R(A)  := \bigcup\limits_{\mathclap{u \in D(A)}}^{} Au $ der Wertebereich von $A$
+\item[iii)] $ G(A)  := \{ ( u,v ) \in X \times Y \vert u \in D(A), v \in R(A) \} $ der Graph von A 
+%\item[] Wir schreiben auch $ (u,v) \in A$, wenn $ (u,v) \in G(A)$ ist.
+\end{itemize}
+Wir schreiben auch $ (u,v) \in A$, wenn $ (u,v) \in G(A)$ ist.
+\end{definition}
+\begin{lemma}
+\thlabel{lemma_demimon}
+Es ist $A: V \to \V $ monoton und demistetig genau dann, wenn $A$ maximal monoton ist. 
+\end{lemma} 
+
+\begin{definition}
+Sei $V$ ein reeller und reflexiver Banach-Raum und $\V$ der dazugehörige Dualraum von $V$. Weiter sei $\Lambda \colon D(\Lambda) \to 2^{\V} $ ein Operator, wobei $D(\Lambda) \subset V $ ein linearer Definitionsbereich \footnote{das heißt, es liegt eine lineare Vektorraumstruktur vor} ist. Es heißt $\Lambda$ maximal monoton genau dann, wenn 
+\begin{itemize}
+\item[i)] $\Lambda$ ist monoton
+\item[ii)] für $f \in V^{\ast}$ folgt aus 
+$$ \langle f - \Lambda v, u - v \rangle \geq 0  \text{ für alle } v \in D(\Lambda), $$ 
+dass $ u \in D(\Lambda) \text{ und } \Lambda u = f $. %\footnote{Gröger, Zacharias, S. 78, Def. 2.1} 
+\end{itemize}
+\end{definition}
+
+\begin{satz}[von Browder-Minty mit maximal-monotoner Störung]
+Sei V ein separabler, reflexiver Banach-Raum und $\V$ der dazugehörige Dualraum von $V$. Weiter sei $A \colon V \to V^{\ast}$ radialstetig, monoton und koerzitiv und $\Lambda \colon D(\Lambda) \to V^{\ast}$ radialstetig und maximal-monoton, wobei D($\Lambda$) der lineare Definitionsbereich$^1$ von $\Lambda$ ist. \\
+Für $f \in V^{\ast}$ existiert ein $u \in D(\Lambda) $ mit $Au + \Lambda u = f$. Ist A zusätzlich strikt monoton, so ist die Lösung $u \in D(\Lambda)$ eindeutig. 
+\end{satz} 
+
+\begin{lemma}[Nullstellenlemma] \thlabel{Nullstellenlemma} % ist das eine Art des Fundamentallemmas? 
+Seien $V, \V, A, \Lambda$ und $ f $ wie im Satz. Sei weiterhin $ F \subset D(\Lambda) $ ein linearer und endlichdimensionaler Unterraum und $M > 0 $ eine von $F$ unabhängige Konstante.\\
+Dann existiert ein $u_F \in F $ mit $$ \langle A u_F + \Lambda u_F - f , h \rangle = 0 \text{ für alle } h \in F .$$
+Es ist zusätzlich $\Vert u_F  \Vert \leq M $.
+\end{lemma}
+\section{neues Kapiel}
+\subsection{neuer Abschnitt}
+
+\begin{lemma}
+\thlabel{lemmaSchnitt}
+Sei $V$ ein Banach-Raum, $K \subset V$ eine abgeschlossene Kugel und $\Phi \subset K$ ein endliches System schwach abgeschlossener Teilmengen von $K$. Falls $\bigcap\limits_{U \subset \Psi} U \neq \emptyset \text{ für alle } \Psi \subset \Phi$, dann folgt $\bigcap\limits_{U \subset \Phi} U \neq \emptyset$ 
+\end{lemma}
+
+\begin{definition} 
+Seien X, Y Mengen und $ A \colon X \to 2^Y $ eine Abbildung. Dann heißt:
+\begin{itemize}
+% \setlength\itemsep{1em}
+\item[i)] $ D(A)  := \{u \in X \vert Au \neq \emptyset \} $ der effektive Defintionsbereich
+\item[ii)] $ R(A)  := \bigcup\limits_{u \in D(A)}^{} Au $ Wertebereich
+\item[iii)] $ G(A)  := \{ ( u,v ) \in X \times Y \vert u \in D(A), v \in R(A) \} $ Graph von A 
+\end{itemize}
+Wir schreiben auch $ (u,v) \in A$, wenn $ (u,v) \in G(A)$ ist.
+\end{definition}
+
+\begin{satz}[von Browder-Minty mit maximal-monotoner Störung]
+Sei V ein separabler, reflexiver Banach-Raum und $\V$ der dazugehörige Dualraum von $V$. Weiter sei $A \colon V \to V^{\ast}$ radialstetig, monoton und koerzitiv und $\Lambda \colon D(\Lambda) \to V^{\ast}$ radialstetig und maximal-monoton, wobei D($\Lambda$) der lineare Definitionsbereich$^1$ von $\Lambda$ ist. \\
+Für $f \in V^{\ast}$ existiert ein $u \in D(\Lambda) $ mit $Au + \Lambda u = f$. Ist A zusätzlich strikt monoton, so ist die Lösung $u \in D(\Lambda)$ eindeutig. 
+\end{satz} 
+
+\newpage
+
+\section{Hausaufgabe 5.2}
+\begin{lemma} 
+Wir erhalten mit Hilfe des Distributivgestzes die Gleichung für die binomische Formel: 
+\begin{align*}
+(a + b) \cdot (a - b) &= (a \cdot a + \cancel{ b \cdot a } - \cancel { a \cdot b } - b \cdot b) \\
+&= a^2 - b^2
+\end{align*} 
+\end{lemma}
+
+\begin{lemma}
+Wir können auch in einer Matrix bestimmen, ob die Zeilen links- oder rechtsbündig sind beziehungsweise auch zentriert: 
+\[
+\begin{pmatrix*}[c]
+1 & 2 & 3 \\
+10 & 20 & 30 \\
+100 & 200 & 300
+\end{pmatrix*} = 
+\begin{pmatrix*}[l]
+1 & 2 & 3 \\
+10 & 20 & 30 \\
+100 & 200 & 300
+\end{pmatrix*}=
+\begin{pmatrix*}[r]
+1 & 2 & 3 \\
+10 & 20 & 30 \\
+100 & 200 & 300
+\end{pmatrix*}
+\]
+\end{lemma}
+
+\begin{satz}
+Mit Hilfe des \texttt{intertext}-Befehls lassen sich Formeln schöner oder hässlicher aufschreiben: 
+\begin{align*}
+A = \sum_{0 \leq i < j \leq n} a_{ij} \\
+\intertext{sieht hässlich aus im Vergleich zu }\\
+A = \sum_{\mathclap{ 0 \leq i < j \leq n}} a_{ij}
+\end{align*}
+\end{satz}
+
+\newpage
+\section{Hausaufgabe 5.3}
+\label{sec:HA5.3}
+\subsection{binomische Formeln}
+\label{sec:binomische Formeln}
+
+Wir betrachten die sogenannten Formeln: 
+\begin{align} 
+(a + b)^2 = a^2 +2ab + b^2 \label{eq:1binom} \\
+(a - b)^2 = a^2 -2ab + b^2 \label{eq:2binom} \\
+(a + b)(a - b) = a^2 - b^2 \label{eq:3binom}
+\end{align}
+Mit diesen Formeln lassen sich zum Beispiel die Flächen von Quadraten leichter berechnen. Wir sehen in der Formel~(\ref{eq:1binom}) um wie viel größer die Fläche eines Quadrates wird, wenn wir die Seiten, die ursprünglich die Länge $a$ hatten, um $b$ verlängert werden. \\
+Genauso sehen wir in der Gleichung~(\ref{eq:2binom}) die Änderung, wenn wir die Seiten um die Länge $b$ verkürzen. Wir werden die Gleichung \eqref{eq:2binom} ebenfalls für den Beweis der in Abschnitt~\ref{sec:binom Ungl} beschriebenen Gleichung~\eqref{eq:binomungl} nutzen. Dazu dann aber mehr auf Seite \pageref{sec:HA5.3}. \\
+Fragt man sich nun, was passiert, wenn man die eine Seite des Quadrats um diesselbe Länge verkürzt, wie man die andere Seite verlängert, so liefert Gleichung~\eqref{eq:3binom} die Antwort. 
+\subsection{binomische Ungleichung}
+\label{sec:binom Ungl}
+Es wird in der Literatur auch häufig von binomischen Ungleichungen Gebrauch gemacht ohne dass der Name dafür so einheitlich ist. Es geht glaube ich dabei mehr darum, dass sich Diese mit Hilfe der in Kapitel~\ref{sec:binomische Formeln} auf Seite~\pageref{sec:binomische Formeln} beschriebenen Formeln leicht beweisen lassen. \\
+Dazu zählt unter Anderem:
+\begin{align}
+ab &\leq \frac{\varepsilon}{2} a^2 + \frac{1}{2 \varepsilon} b^2, \quad \text{ für } \varepsilon > 0, a,b \in \R \label{eq:binomungl}
+\end{align}
+Damit beenden wir das Kapitel \ref{sec:HA5.3} und lesen nächste Woche wieder voneinander.
+
+\end{document}
